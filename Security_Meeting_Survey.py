@@ -18,6 +18,10 @@ def sendLineNotify(input_division, input_name, input_date_msg, message):
     requests.post("https://notify-api.line.me/api/notify", headers=headers, data=data)
 
 def main():
+    # 隱藏網頁上方
+    hide_streamlit_style = """<style>[data-testid="stToolbar"] {visibility: hidden !important;}footer {visibility: hidden !important;}</style>"""
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
     
     st.header('警力進駐協調會調查', divider='rainbow')
     input_division = st.text_input('設施單位：')
