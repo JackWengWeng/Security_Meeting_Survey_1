@@ -54,7 +54,7 @@ def main():
         gss_client = gspread.authorize(credentials)
 
         # 開啟 Google Sheet 資料表
-        spreadsheet_key = '1OqCYJMuzuBCoFoP4ETpxXsJHrzdGISXvOldS6oYh1Cc' 
+        spreadsheet_key = '1DrQOujc65OJdyupTL4WnhUBPoU_PRZWz2Hdyc131jjE' 
         sheet = gss_client.open_by_key(spreadsheet_key).sheet1
 
         sheet.append_row(data) 
