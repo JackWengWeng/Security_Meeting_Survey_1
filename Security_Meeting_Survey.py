@@ -29,7 +29,7 @@ def main():
     status_option = st.checkbox('已召開或預定召開')
   
     if status_option:
-        input_date_msg = st.date_input("請填召開日期") 
+        input_date_msg = st.date_input("請填召開或預計召開日期") 
     else:
         input_date_msg = st.text_input('請填尚未規劃召開原因')
 
