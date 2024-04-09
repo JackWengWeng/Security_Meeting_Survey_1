@@ -12,7 +12,7 @@ def sendLineNotify(input_division, input_name, input_date_msg, message):
 
     # HTTP 標頭參數與資料
     headers = {"Authorization": "Bearer " + token}
-    message += f'填報單位：{input_division}  \n 填 報 人：{input_name}  \n召開日期/尚未規劃原因：{input_date_msg}'
+    message += f'填報單位：{input_division}  \n填  報  人：{input_name}  \n召開日期/尚未規劃原因：{input_date_msg}'
     data = {'message': message}
     # 以 requests 发送 POST 请求
     requests.post("https://notify-api.line.me/api/notify", headers=headers, data=data)
