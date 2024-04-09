@@ -26,7 +26,7 @@ def main():
     st.header('保安防護聯繫會議調查', divider='rainbow')
     input_division = st.text_input('設施單位：')
     input_name = st.text_input('填報人：')
-    status_option = st.checkbox('是否已召開或預定召開會議?')
+    status_option = st.checkbox('請勾選是否已召開或預定召開會議')
   
     if status_option:
         input_date_msg = st.date_input("請填召開或預計召開日期") 
