@@ -6,7 +6,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 # 要发送的消息
 message = '\n'
 # LINE Notify 權杖
-token = "C1I4WKMBpVzVzQNGesqEX9sZvjw5hqMjXIu1P7sCeDs"  # 填写Line token
+token = "0b3KcCvM0kWFAPI6ScAYpF8h7OUbjWACFaSL3AcSJzs"  # 填写Line token
 
 def sendLineNotify(input_division, input_name, input_date_msg, message):
 
